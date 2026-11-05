@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontsert · Tartu Kontsert demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Mine sisu juurde</a>
+    <div class="demo-bar">
+      Üks sündmuse leht enne ostu — midagi, mida praegusel kontsert.ee-l napib
+    </div>
+
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="./">
+          <span class="brand-name">Tartu Kontsert</span>
+          <span class="brand-tag">Anno 1997 · elamusi läbi aastakümnete</span>
+        </a>
+        <nav aria-label="Põhi">
+          <ul class="nav-links">
+            <li><a href="./kontserdid.html">Kontserdid</a></li>
+            <li><a href="./teenused.html">Teenused</a></li>
+            <li><a href="./teenused.html#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="wrap detail-hero">
+        <img id="cover" src="" alt="" width="1200" height="825" data-reveal="scale" />
+        <div data-reveal style="--x: 28px; --y: 0">
+          <h1 id="title">…</h1>
+          <p class="lede" id="blurb"></p>
+          <div class="date-pick" id="dates" role="group" aria-label="Vali kuupäev"></div>
+          <div class="hero-actions" style="margin-top: 1.25rem">
+            <button type="button" class="btn btn-primary" id="buy">Osta pilet</button>
+            <button type="button" class="btn btn-ghost" id="group">Grupipäring</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <h2>Piletikassa</h2>
+          <p>Demo ühendab korraldaja brändi ja ostutee ühte voogu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/kontsert.js"></script>
+  </body>
+</html>
