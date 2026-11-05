@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontserdid · Tartu Kontsert demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.classList.add('js')
+    </script>
+    <script type="module" crossorigin src="./assets/kontserdid-DiSETc_p.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/styles-CNETcmrr.js">
+    <link rel="modulepreload" crossorigin href="./assets/data-DuI8tjoP.js">
+    <link rel="stylesheet" crossorigin href="./assets/styles-xR_8okCU.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Mine sisu juurde</a>
+    <div class="demo-bar">Kalender üleval · kontserdid piltidega all</div>
+
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="./">
+          <span class="brand-name">Tartu Kontsert</span>
+          <span class="brand-tag">Anno 1997 · elamusi läbi aastakümnete</span>
+        </a>
+        <nav aria-label="Põhi">
+          <ul class="nav-links">
+            <li><a href="./kontserdid.html">Kontserdid</a></li>
+            <li><a href="./teenused.html">Teenused</a></li>
+            <li><a href="./teenused.html#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="section panel" style="min-height: 70vh">
+      <div class="wrap">
+        <div class="section-head" data-reveal style="--y: 24px">
+          <div>
+            <h2>Kontserdid</h2>
+            <p>Vali päev kalendrist või keri nimekirja.</p>
+          </div>
+        </div>
+
+        <div class="filters-bar">
+          <div class="filters">
+            <div class="field">
+              <label for="city">Linn</label>
+              <select id="city"></select>
+            </div>
+            <p class="count-chip" id="count">…</p>
+          </div>
+        </div>
+
+        <div class="calendar-layout">
+          <div class="cal" data-reveal>
+            <div class="cal-head">
+              <h3 id="cal-title">…</h3>
+              <div class="cal-nav">
+                <button type="button" id="cal-prev" aria-label="Eelmine kuu">‹</button>
+                <button type="button" id="cal-next" aria-label="Järgmine kuu">›</button>
+              </div>
+            </div>
+            <div class="cal-weekdays" aria-hidden="true">
+              <span>E</span><span>T</span><span>K</span><span>N</span><span>R</span><span>L</span><span>P</span>
+            </div>
+            <div class="cal-grid" id="cal-grid"></div>
+          </div>
+          <aside class="day-panel" data-reveal style="--x: 20px; --y: 0">
+            <h3 id="day-title">Vali kuupäev</h3>
+            <div id="day-events"></div>
+          </aside>
+        </div>
+
+        <div class="section-head shows-head" data-reveal>
+          <div>
+            <h2>Kõik kontserdid</h2>
+            <p>Pilt + kus ja millal.</p>
+          </div>
+        </div>
+
+        <div id="show-list" class="show-list" data-stagger="80" data-stagger-base="40"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <h2>Tartu Kontsert</h2>
+          <p>Demo — ei ole seotud päris piletisüsteemiga.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

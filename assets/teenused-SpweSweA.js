@@ -1,0 +1,1 @@
+import{a as e,i as t,r as n,t as r}from"./styles-CNETcmrr.js";r(),e(),n(`#inquiry`).addEventListener(`submit`,e=>{e.preventDefault(),t(`Demo: päring salvestati ainult selles brauseris — midagi ei saadetud.`),e.target.reset()});
